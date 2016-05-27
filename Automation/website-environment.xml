@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<environment name="fixitapp">
+  <website name="fixitapp" />
+  <storage accountName="fixitappstorage" accessKey="fE5hWaMXcQugE9VSMXBpAxAavIssp+AjpqyMLB3/k90Cb18bDGsa8cFE5P/TlnPl6DTN35uJm8FiBvwJrW066A==" connectionString="BlobEndpoint=http://fixitappstorage.blob.core.windows.net/;QueueEndpoint=http://fixitappstorage.queue.core.windows.net/;TableEndpoint=http://fixitappstorage.table.core.windows.net/;AccountName=fixitappstorage;AccountKey=fE5hWaMXcQugE9VSMXBpAxAavIssp+AjpqyMLB3/k90Cb18bDGsa8cFE5P/TlnPl6DTN35uJm8FiBvwJrW066A==" />
+  <sqlAzure databaseServerName="isogm9cinf" userName="dbuser" password="P@ssw0rd">
+    <appdb connectionString="Server=tcp:isogm9cinf.database.windows.net,1433;Database=appdb;User ID=dbuser@isogm9cinf;Password=P@ssw0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" />
+    <memberdb connectionString="Server=tcp:isogm9cinf.database.windows.net,1433;Database=memberdb;User ID=dbuser@isogm9cinf;Password=P@ssw0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" />
+  </sqlAzure>
+</environment>
