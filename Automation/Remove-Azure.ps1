@@ -1,5 +1,4 @@
-#Remove-AzureWebsite -Force fixitapp
-#Remove-AzureRmAppServicePlan -Force -Name Default1 -ResourceGroupName Default-Web-AustraliaEast
+#script to remove the azure resouce manager related to the fixitapp
 
 Remove-AzureRmResourceGroup -Force -Name Default-Web-AustraliaEast
 #this will delete all the resouce under the resouce group
