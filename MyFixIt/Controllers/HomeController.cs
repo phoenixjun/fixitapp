@@ -13,6 +13,8 @@
 // limitations under the License.
 //
 
+using System;
+using System.Configuration;
 using System.Web.Mvc;
 
 namespace MyFixIt.Controllers
@@ -21,6 +23,11 @@ namespace MyFixIt.Controllers
     {
         public ActionResult Index()
         {
+            if (!string.Equals(ConfigurationManager.AppSettings["ServeRequest"], "true",
+                StringComparison.InvariantCultureIgnoreCase))
+            {
+                throw new ApplicationException("error");
+            }
             return View();
         }
     }
